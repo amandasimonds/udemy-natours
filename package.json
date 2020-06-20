@@ -1,0 +1,25 @@
+{
+  "name": "udemy-natours",
+  "version": "1.0.0",
+  "description": "Nature Tours website built through the Advanced CSS Udemy course",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amandasimonds/udemy-natours.git"
+  },
+  "author": "Amanda Simonds",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amandasimonds/udemy-natours/issues"
+  },
+  "homepage": "https://github.com/amandasimonds/udemy-natours#readme",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
