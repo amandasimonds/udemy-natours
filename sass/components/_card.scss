@@ -1,0 +1,20 @@
+.card {
+    //the lower the perspective value, the crazier it looks
+    perspective: 150rem;
+    //add moz prefix to make sure it works in mozilla firefox as well
+    -moz-perspective: 150rem;
+
+    &__side{
+        background-color: orangered;
+        color: white;
+        font-size: 2rem;
+        height: 50rem;
+        transition: all .8s;
+    }
+
+    //.card:hover .card__side {transformed
+    &:hover &__side{
+        transform: rotateY(180deg);
+    }
+}
+
