@@ -1,0 +1,42 @@
+.form{
+    &__group:not(:last-child){
+    margin-bottom: 2rem;
+    }
+
+    &__input{
+        font-size: 1.5rem;
+        //Automatically inherit the font styles.
+        //Most elements automatically inherit, but the form element does not
+        font-family: inherit;
+        color: inherit;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($color-white, .5);
+        border: none;
+        //trick to make sure the box doesn't change when we add the border on focus
+        border-radius: 3px solid transparent;
+        display: block;
+        width: 90%;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .2);
+            border-bottom: 3px solid $color-primary;
+        }
+
+        //represents things that aren't on the webpage(like placeholders)
+        &::-webkit-input-placeholder{
+            color: $color-grey-dark-2;
+        }
+
+        &:focus:invalid{
+            border-bottom: 3px solid $color-secondary-dark;
+        }
+    }
+
+    &__label{
+
+    }
+
+
+}
