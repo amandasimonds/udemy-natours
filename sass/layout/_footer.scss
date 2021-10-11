@@ -4,6 +4,10 @@
     font-size: 1.4rem;
     color: $color-grey-light;
 
+    @include respond(tab-port) {
+        padding: 8rem 0;
+    }
+
     &__logo-box{
         text-align: center;
         margin-bottom: 8rem;
@@ -20,6 +24,11 @@
         //so that the border top only shows above the text and doesn't overflow
         //inline block makes the element take up its on space, only what it needs.
         display: inline-block;
+
+        @include respond(tab-port) {
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__list{
@@ -59,5 +68,10 @@
         //decreasing the width to make it more even, and float right
         width: 80%;
         float: right;
+
+        @include respond(tab-port) {
+            float: none;
+            width: 100%;
+        }
     }
 }
